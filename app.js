@@ -50,5 +50,20 @@ const books = [
   const totalAmountSpent = calculateTotal(purchases);
   console.log(` Your total Amount Spent is ${totalAmountSpent}`);
 
+   // ############# Solution to Question 4 ##############
+
+   const employees = [
+    { name: "Alice", department: "Engineering", salary: 60000 },
+    { name: "Bob", department: "Marketing", salary: 55000 },
+    { name: "Tom", department: "Finance", salary: 95000 },
+    { name: "Jerry", department: "Engineering", salary: 85000 },
+    
+  ];
   
+  function filterEmployees(employees) {
+    return employees.filter(employee => employee.department === "Engineering" && employee.salary > 50000);
+  }
+  
+  const filteredEmployees = filterEmployees(employees);
+  console.log(filteredEmployees);
 
