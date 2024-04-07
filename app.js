@@ -34,3 +34,21 @@ const books = [
   
   const formattedBooks = formatBooks(books);
   console.log(formattedBooks);
+
+  // ############# Solution to Question 3 ##############
+
+  const purchases = [
+    { item: "Shoes", price: 89.99 },
+    { item: "Headphones", price: 49.99 },
+    {item : "Smart Phone", price: 100},
+  ];
+  
+  function calculateTotal(purchases) {
+    return purchases.reduce((total, purchase) => total + purchase.price, 0);
+  }
+  
+  const totalAmountSpent = calculateTotal(purchases);
+  console.log(` Your total Amount Spent is ${totalAmountSpent}`);
+
+  
+
