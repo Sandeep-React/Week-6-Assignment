@@ -19,3 +19,18 @@ students.forEach(student => {
 });
 
 console.log(students);
+
+// ############# Solution to Question 2 ##############
+
+const books = [
+    { title: "The Great Gatsby", author: "F. Scott Fitzgerald", price: 12.99 },
+    { title: "To Kill a Mockingbird", author: "Harper Lee", price: 9.99 },
+    { title: "Sorry you are not my type", author: "Sudeep Nagarkar", price: 199},
+  ];
+  
+  function formatBooks(books) {
+    return books.map(book => `${book.title}: ${book.price}`);
+  }
+  
+  const formattedBooks = formatBooks(books);
+  console.log(formattedBooks);
